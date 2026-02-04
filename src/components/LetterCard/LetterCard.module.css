@@ -1,0 +1,145 @@
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px 24px;
+  color: white;
+}
+
+.senderInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.senderName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.date {
+  font-size: 0.875rem;
+  opacity: 0.9;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+}
+
+.content {
+  padding: 24px;
+}
+
+.letterContent {
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+  font-family: 'Barlow', sans-serif;
+  white-space: pre-wrap;
+}
+
+.verseSection {
+  background: #f7fafc;
+  padding: 20px 24px;
+  border-top: 1px solid #e2e8f0;
+  position: relative;
+}
+
+.verseSection::before {
+  content: '"';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 3rem;
+  color: #cbd5e0;
+  font-family: serif;
+  line-height: 1;
+}
+
+.verseText {
+  font-size: 0.95rem;
+  color: #2d3748;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+  font-style: italic;
+  font-family: 'Barlow', sans-serif;
+  padding-left: 20px;
+}
+
+.verseReference {
+  display: block;
+  text-align: right;
+  font-size: 0.875rem;
+  color: #718096;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .header {
+    padding: 16px 20px;
+  }
+
+  .senderInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .senderName {
+    font-size: 1.125rem;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .verseSection {
+    padding: 16px 20px;
+  }
+
+  .verseSection::before {
+    font-size: 2.5rem;
+  }
+
+  .verseText {
+    padding-left: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 14px 16px;
+  }
+
+  .content {
+    padding: 16px;
+  }
+
+  .verseSection {
+    padding: 14px 16px;
+  }
+}

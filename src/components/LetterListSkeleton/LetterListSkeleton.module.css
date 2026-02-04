@@ -1,0 +1,158 @@
+.container {
+  padding-top: 2rem;
+  margin: 2rem 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.titleSkeleton {
+  height: 1.5rem;
+  width: 180px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.letterGrid {
+  display: grid;
+  margin-top: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px 24px;
+}
+
+.senderInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.senderNameSkeleton {
+  height: 1.25rem;
+  width: 150px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.3) 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 4px;
+}
+
+.dateSkeleton {
+  height: 0.875rem;
+  width: 80px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.3) 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 4px;
+}
+
+.content {
+  padding: 24px;
+}
+
+.contentLine {
+  height: 1rem;
+  width: 100%;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.verseSection {
+  background: #f7fafc;
+  padding: 20px 24px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.verseLine {
+  height: 0.95rem;
+  width: 100%;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.verseReference {
+  height: 0.875rem;
+  width: 100px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-top: 12px;
+}
+
+/* Animação de shimmer/loading */
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .header {
+    padding: 16px 20px;
+  }
+
+  .senderInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .verseSection {
+    padding: 16px 20px;
+  }
+
+  .letterGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 14px 16px;
+  }
+
+  .content {
+    padding: 16px;
+  }
+
+  .verseSection {
+    padding: 14px 16px;
+  }
+}

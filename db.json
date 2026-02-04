@@ -1,0 +1,98 @@
+{
+  "missionaries": [
+    {
+      "id": "2",
+      "name": "Maria e João Santos",
+      "field": "Educação e plantação de igrejas",
+      "country": "Camboja",
+      "bio": "Trabalhando com crianças e estabelecendo igrejas em comunidades rurais.",
+      "imageUrl": "https://images.pexels.com/photos/6646917/pexels-photo-6646917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "3",
+      "name": "Isabela Martins",
+      "field": "Tradução da Bíblia",
+      "country": "Indonésia",
+      "bio": "Traduzindo as Escrituras para línguas locais para alcançar grupos de pessoas não alcançadas.",
+      "imageUrl": "https://images.pexels.com/photos/5905498/pexels-photo-5905498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "4",
+      "name": "Paulo Oliveira",
+      "field": "Ministério com jovens",
+      "country": "Espanha",
+      "bio": "Alcançando estudantes universitários e jovens profissionais com o evangelho.",
+      "imageUrl": "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+  ],
+  "verses": [
+    {
+      "id": "1",
+      "reference": "Filipenses 4:13",
+      "text": "Tudo posso naquele que me fortalece."
+    },
+    {
+      "id": "2",
+      "reference": "Josué 1:9",
+      "text": "Não fui eu que ordenei a você? Seja forte e corajoso! Não se apavore nem desanime, pois o Senhor, o seu Deus, estará com você por onde você andar."
+    },
+    {
+      "id": "3",
+      "reference": "Romanos 8:28",
+      "text": "Sabemos que Deus age em todas as coisas para o bem daqueles que o amam, dos que foram chamados de acordo com o seu propósito."
+    },
+    {
+      "id": "4",
+      "reference": "Jeremias 29:11",
+      "text": "Porque eu sei os planos que tenho para vocês\", declara o Senhor, \"planos de fazê-los prosperar e não de causar dano, planos de dar a vocês esperança e um futuro."
+    },
+    {
+      "id": "5",
+      "reference": "Isaías 40:31",
+      "text": "Mas aqueles que esperam no Senhor renovarão as suas forças. Voarão como águias; correrão e não ficarão exaustos, andarão e não se cansarão."
+    },
+    {
+      "id": "6",
+      "reference": "Mateus 28:19-20",
+      "text": "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai e do Filho e do Espírito Santo, ensinando-os a obedecer a tudo o que eu lhes ordenei. E eu estarei sempre com vocês, até o fim dos tempos."
+    }
+  ],
+  "letters": [
+    {
+      "id": "1",
+      "missionaryId": "1",
+      "content": "Obrigado pelo seu serviço fiel em Moçambique. Seu ministério médico está mudando vidas tanto física quanto espiritualmente. Orando por força contínua e sabedoria enquanto você serve.",
+      "verse": {
+        "id": "1",
+        "reference": "Filipenses 4:13",
+        "text": "Tudo posso naquele que me fortalece."
+      },
+      "senderName": "Ana Costa",
+      "date": "2024-06-01T10:30:00Z"
+    },
+    {
+      "id": "2",
+      "missionaryId": "3",
+      "content": "Seu trabalho na tradução da Bíblia é inspirador. Que Deus continue a guiá-lo enquanto você ajuda a levar Sua Palavra àqueles que nunca a ouviram em sua própria língua.",
+      "verse": {
+        "id": "3",
+        "reference": "Romanos 8:28",
+        "text": "Sabemos que Deus age em todas as coisas para o bem daqueles que o amam, dos que foram chamados de acordo com o seu propósito."
+      },
+      "senderName": "Carlos Mendes",
+      "date": "2024-05-15T14:45:00Z"
+    },
+    {
+      "id": "1747017904088",
+      "missionaryId": "4",
+      "content": "Deus abençõe muito o seu trabalho!",
+      "verse": {
+        "id": "1",
+        "reference": "Filipenses 4:13",
+        "text": "Tudo posso naquele que me fortalece."
+      },
+      "senderName": "Gustavo Matos",
+      "date": "2025-05-12T02:45:04.088Z"
+    }
+  ]
+}

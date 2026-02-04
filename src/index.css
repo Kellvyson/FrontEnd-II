@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+/* Reset do CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  
+
+  /* Adicionando a paleta de cores do webapp */
+:root {
+  --color-surface-muted: #f3f4f6;
+  --color-background-base: #f0f2f5;
+  --color-text-primary: #434448;
+  --color-border-primary: #d9d9e0;
+  --color-accent-primary: #5429cc;
+  --color-accent-warm: #f95329;
+}
+
+/* Adicionando o estilo base do body */
+body {
+  font-family: "Montserrat", Georgia, serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Garantir que emojis sejam renderizados corretamente */
+.emoji,
+[class*="flag"] {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+}
