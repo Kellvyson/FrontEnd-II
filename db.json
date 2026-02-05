@@ -93,6 +93,18 @@
       },
       "senderName": "Gustavo Matos",
       "date": "2025-05-12T02:45:04.088Z"
+    },
+    {
+      "id": "0a82",
+      "missionaryId": "3",
+      "content": "Deus é contigo!",
+      "senderName": "Kellvyson",
+      "verse": {
+        "id": "1",
+        "reference": "Filipenses 4:13",
+        "text": "Tudo posso naquele que me fortalece."
+      },
+      "date": "2026-02-05T01:09:51.001Z"
     }
   ]
 }

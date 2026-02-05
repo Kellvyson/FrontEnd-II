@@ -1,7 +1,8 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import { Mail, Heart } from "lucide-react";
 import { MissionaryListSkeleton } from "./components/MissionaryListSkeleton";
 import { LetterListSkeleton } from "./components/LetterListSkeleton";
+import CreateLetterModal from "./components/CreateLetterModal";
 import styles from "./App.module.css";
 
 // Lazy Loading dos componentes principais
@@ -11,6 +12,10 @@ const LetterList = React.lazy(() => import('./components/LetterList'));
 const MissionaryList = React.lazy(() => import('./components/MissionaryList'));
 
 function App() {
+  // Estado para controlar abertura/fechamento do modal
+  // Smart Component gerencia este estado e passa como props para o Dumb Component
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className={styles.container}>
       {/* Header com logo e botão de ação */}
@@ -22,6 +27,7 @@ function App() {
         <button
           className={styles.sendButton}
           type="button"
+          onClick={() => setIsModalOpen(true)}
         >
           Enviar carta
         </button>
@@ -57,6 +63,12 @@ function App() {
           </p>
         </div>
       </footer>
+
+      {/* Modal de criação de carta */}
+      <CreateLetterModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </div>
   );
 }

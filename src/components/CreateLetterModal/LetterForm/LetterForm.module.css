@@ -1,0 +1,137 @@
+.formContainer {
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-top: 0.6rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.title {
+  color: var(--color-text-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-text-primary);
+  font-size: 0.9rem;
+}
+
+.input,
+.textarea {
+  padding: 0.75rem;
+  border: 1px solid var(--color-border-primary);
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  font-family: "Montserrat", sans-serif;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-accent-primary);
+  box-shadow: 0 0 0 2px rgba(84, 41, 204, 0.25);
+}
+
+.textarea {
+  resize: none;
+  height: 100px;
+  line-height: 1.5;
+}
+
+.submitButton {
+  color: #fff;
+  border: none;
+  width: 12rem;
+  cursor: pointer;
+  padding: 0.7rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  font-family: "Barlow", sans-serif;
+  background-color: var(--color-accent-warm);
+  transition: filter 0.2s;
+  align-self: flex-end;
+}
+
+.submitButton:hover {
+  filter: brightness(90%);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.selectPrompt {
+  background-color: var(--color-surface-muted);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  color: var(--color-text-primary);
+  border: 1px dashed var(--color-border-primary);
+}
+
+.selectPrompt h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+.successMessage {
+  background-color: #30c387;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  animation: fadeIn 0.3s ease-in-out;
+  font-family: "Montserrat", sans-serif;
+}
+
+.error {
+  color: #e53e3e;
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0.25rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .editorContainer {
+    padding: 1.5rem;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+}
