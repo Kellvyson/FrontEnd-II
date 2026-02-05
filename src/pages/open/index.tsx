@@ -1,12 +1,22 @@
-import { SignInButton, SignUpButton } from "@clerk/clerk-react";
+import { SignInButton, SignUpButton, SignedIn, SignedOut } from "@clerk/clerk-react";
+import { Navigate } from "react-router-dom";
 import { Mail, Heart, Globe, Send } from "lucide-react";
 import styles from "./open.module.css";
 
 // OpenPage - Página pública acessível sem autenticação
 // Serve como landing page e apresenta o propósito da aplicação
+// Se o usuário já estiver autenticado, redireciona para a HomePage
 export function OpenPage() {
   return (
-    <div className={styles.container}>
+    <>
+      {/* Se usuário está autenticado, redireciona para home */}
+      <SignedIn>
+        <Navigate to="/" replace />
+      </SignedIn>
+
+      {/* Se não está autenticado, mostra a landing page */}
+      <SignedOut>
+        <div className={styles.container}>
       {/* Hero Section */}
       <header className={styles.hero}>
         <div className={styles.heroContent}>
@@ -59,6 +69,8 @@ export function OpenPage() {
         </p>
       </footer>
     </div>
+      </SignedOut>
+    </>
   );
 }
 

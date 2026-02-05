@@ -2,12 +2,10 @@ import React, { Suspense, useState } from "react";
 import { UserButton } from "@clerk/clerk-react";
 import { Mail, Heart } from "lucide-react";
 import { MissionaryListSkeleton } from "../../components/MissionaryListSkeleton";
-import { LetterListSkeleton } from "../../components/LetterListSkeleton";
 import CreateLetterModal from "../../components/CreateLetterModal";
 import styles from "../../App.module.css";
 
-// Lazy Loading dos componentes principais
-const LetterList = React.lazy(() => import('../../components/LetterList'));
+// Lazy Loading do componente principal
 const MissionaryList = React.lazy(() => import('../../components/MissionaryList'));
 
 // HomePage - Página protegida que requer autenticação
@@ -39,14 +37,10 @@ export function HomePage() {
       {/* Main content */}
       <main className={styles.main}>
         <section className={styles.missionariesSection}>
-          {/* Suspense com Skeleton para MissionaryList */}
+          {/* Suspense com Skeleton para MissionaryList
+              As cartas agora são exibidas no verso dos cards ao clicar */}
           <Suspense fallback={<MissionaryListSkeleton />}>
             <MissionaryList />
-          </Suspense>
-
-          {/* Suspense com Skeleton para LetterList */}
-          <Suspense fallback={<LetterListSkeleton />}>
-            <LetterList />
           </Suspense>
         </section>
       </main>
